@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora De Edad</title>
+    <link rel="icon" href="icon/calculadora.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="contenedor-titulo">
+            <h1>Calculadora De Edad</h1>
+        </div>
+        <div class="contenedor-calculadora">
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha">
+            <button onclick="calcular()">Calcular</button>
+        </div>
+        <p id="edad"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
