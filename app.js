@@ -1,10 +1,10 @@
 function calcular() {
-    var fechaUsuario = new Date(document.getElementById("fecha").value);
-    var fechaActual = new Date();
+    const fechaUsuario = new Date(document.getElementById("fecha").value); // Fecha introducida por el usuario
+    const fechaActual = new Date(); // Obtener la fecha actual
 
-    var años = fechaActual.getFullYear() - fechaUsuario.getFullYear();
-    var meses = fechaActual.getMonth() - fechaUsuario.getMonth();
-    var dias = fechaActual.getDate() - fechaUsuario.getDate();
+    let años = fechaActual.getFullYear() - fechaUsuario.getFullYear(); // Calcular años
+    let meses = fechaActual.getMonth() - fechaUsuario.getMonth(); // Calcular meses
+    let dias = fechaActual.getDate() - fechaUsuario.getDate(); // Calcular dias
 
     if (meses < 0 || (meses === 0 && fechaActual.getDate() < fechaUsuario.getDate())) {
         años--;
@@ -12,7 +12,7 @@ function calcular() {
     }
 
     if (dias < 0) {
-        var diaMes = new Date(fechaActual.getFullYear(), fechaActual.getMonth(), 0).getDate();
+        let diaMes = new Date(fechaActual.getFullYear(), fechaActual.getMonth(), 0).getDate();
         dias += diaMes;
         meses--;
     }
