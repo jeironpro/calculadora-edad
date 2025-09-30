@@ -10,45 +10,50 @@ body {
 }
 
 .contenedor {
-    background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     height: auto;
-    width: 400px;
+    width: 500px;
 }
 
 .contenedor-titulo h1 {
-    color: rgb(255, 20, 20);
-    font-size: x-large;
+    color: #1b7709;
     text-align: center;
 }
 
 .contenedor-calculadora {
     align-items: center;
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     justify-content: center;
 }
 
 .contenedor-calculadora label {
+    font-size: 16px;
     font-weight: 500;
 }
 
-.contenedor-calculadora label, .contenedor-calculadora input {
-    margin-left: 3px;
-}
-
-.contenedor-calculadora input, .contenedor-calculadora button {
-    margin-left: 8px;
+.contenedor-calculadora input {
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 40px;
+    padding: 0 10px;
+    width: 200px;
 }
 
 .contenedor button {
-    background-color: #0056b3;
+    background-color: #1b7709;
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: #fff;
     cursor: pointer;
-    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    width: 200px;
 }
 
 .contenedor button:hover {
